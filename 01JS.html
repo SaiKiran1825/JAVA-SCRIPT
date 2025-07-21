@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+
+    <style>
+
+        .green {
+            color: green;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+   <h1 id="h1"> Hello this is my website</h1>
+   <img id= "h2" src="" alt="a photo of me">
+
+    <script>
+
+
+
+            h1 = document.getElementById("h1");
+             //h1.style.color = "red";
+            //h2 = document.getElementById("h2");
+           // h2.src = "https://picsum.photos/200/300";
+            var newPara = document.createElement("p");
+            document.body.appendChild(newPara);
+            newPara.innerHTML="This is a new paragaraph added to the body of the document using JavaScript";
+            newPara.style.color = "red";
+            h2.parentNode.removeChild(h2);
+            newPara.addEventListener("mouseover",function(){
+                newPara.classList.add("green");
+             //newPara.style.color = "blue";
+            })
+            newPara.addEventListener("mouseout",function(){
+                newPara.classList.remove("green");
+                newPara.style.color = "red";
+            })
+            newPara.parentElement.removeChild(h1);
+
+        </script>
+        
+</body>
+</html>
